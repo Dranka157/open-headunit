@@ -145,7 +145,7 @@ class CarPlayHomeActivity : AppCompatActivity() {
 
     private fun openOriginalHeadunit() {
         try {
-            val intent = Intent(this, Class.forName("com.andrerinas.openheadunit.main.MainActivity"))
+            val intent = Intent(this, Class.forName("com.andrerinas.openheadunit.MainActivity"))
             startActivity(intent)
         } catch (_: Exception) {
             Toast.makeText(this, "Erro ao abrir Open Headunit", Toast.LENGTH_SHORT).show()
